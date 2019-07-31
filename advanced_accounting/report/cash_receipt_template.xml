@@ -5,13 +5,8 @@
             <t t-call="report.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="cheque_management.external_layout">
-                         <t t-if="o and 'company_id' in o">
-                <t t-set="company" t-value="o.company_id"></t>
-            </t>
-            <t t-if="not o or not 'company_id' in o">
-                <t t-set="company" t-value="res_company"></t>
-            </t>
                         <div class="page" style="padding-top: 10px;">
+                            <center><i><h1>BLUE NILE FACILITY MANAGEMENT SERVICES</h1></i></center>
                             <center><i><h2>RECEIPT VOUCHER</h2></i></center>
 
                             <div class="row mt32 mb32" style="padding-top: 5px;" id="informations" >
