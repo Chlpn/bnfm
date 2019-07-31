@@ -7,8 +7,8 @@
             string="Print Ledger Report"
             model="general.ledger.report"
             report_type="qweb-pdf"
-            file="account_reporting.ledger_print_report"
-            name="account_reporting.ledger_print_report"
+            file="ledger_report.ledger_print_report"
+            name="ledger_report.ledger_print_report"
             menu="False"
         />
         
@@ -17,8 +17,8 @@
             string="Statement of Account Customerwise"
             model="statement.customer.report"
             report_type="qweb-pdf"
-            file="account_reporting.statement_customerwise_print_report"
-            name="account_reporting.statement_customerwise_print_report"
+            file="ledger_report.statement_customerwise_print_report"
+            name="ledger_report.statement_customerwise_print_report"
             menu="False"
         />
            
@@ -27,8 +27,8 @@
             string="Statement of Account Vendorwise"
             model="statement.vendor.report"
             report_type="qweb-pdf"
-            file="account_reporting.statement_vendorwise_print_report"
-            name="account_reporting.statement_vendorwise_print_report"
+            file="ledger_report.statement_vendorwise_print_report"
+            name="ledger_report.statement_vendorwise_print_report"
             menu="False"
         />
     </data>

@@ -12,11 +12,11 @@ class custom_ledger(models.TransientModel):
 
 
     def print_report(self, data):
-        print "printttt_chequeeeeee"
+
 
         return {
             'type': 'ir.actions.report.xml',
-            'report_name': 'account_reporting.ledger_print_report'
+            'report_name': 'ledger_report.ledger_print_report'
         } 
 #        data = self.pre_print_report(data)
 #        data['form'].update({'reconciled': self.reconciled, 'amount_currency': self.amount_currency})

@@ -38,7 +38,7 @@
 
     <menuitem id="menu_custom_general_report"
         name="general ledger Report"
-        parent="account_reporting.enhance_reporting_custom"
+        parent="ledger_report.enhance_reporting_custom"
         action="action_custom_ledger_menu"/>
 
     <record id="action_custom_ledger_report_values1" model="ir.values">
