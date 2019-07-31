@@ -39,7 +39,7 @@ class RegisterPayment(models.Model):
 
     journal_id = fields.Many2one('account.journal', string="Journal", domain=[('cash_journal', '=', True)])
     payment_method = fields.Selection([('cash', 'Cash'),
-                                       ('cheque', 'Cheque'),
+                                       #('cheque', 'Cheque'),
                                        ('transfer', 'Transfer')],
                                       required=True, default='cash')
     ref = fields.Char('Description', default=_get_default_ref)
@@ -86,6 +86,7 @@ class RegisterPayment(models.Model):
                     'type': 'ir.actions.act_window',
                     'context': context,
                 }
+
             elif self.payment_method == 'cheque':
                 view_id = self.env.ref('cheque_management.issue_cheque_form').id
                 context = {
@@ -107,6 +108,7 @@ class RegisterPayment(models.Model):
                 }
             else :
                 view_id = self.env.ref('advanced_accounting.fund_transfer_form').id
+
                 context = {
                     'default_journal_id': self.journal_id.id,
                     'default_type': 'out',
