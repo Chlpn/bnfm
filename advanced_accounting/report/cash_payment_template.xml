@@ -3,10 +3,16 @@
     <data>
         <template id="cash_payment_report">
             <t t-call="report.html_container">
+                <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id"></t>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"></t>
+            </t>
                 <t t-foreach="docs" t-as="o">
                     <t t-call="cheque_management.external_layout">
                         <div class="page" style="padding-top: 10px;">
-                            <center><i><h2>CASH PAYMENT VOUCHER</h2></i></center>
+                            <center><i><h2>PAYMENT VOUCHER</h2></i></center>
 
                             <div class="row mt32 mb32" style="padding-top: 5px;" id="informations" >
                                 <div class="col-xs-8">
