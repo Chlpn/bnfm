@@ -177,7 +177,14 @@
             <div style="padding-top:50px;"></div>
             <div style="font:15px lucida-console,sans-serif !important; ">
             <p t-if="doc.note">
-            <strong><span>Terms and Conditions:</span> </strong><br/> <span t-field="doc.note" />
+            <strong><span>Terms and Conditions:</span> </strong><br/>
+                            <div style="font:15px lucida-console,sans-serif !important;">
+            <p t-if="doc.payment_term_id ">
+               <strong> <span>Payment Term : </span></strong><span t-field="doc.payment_term_id"/>
+            </p>
+            </div>
+
+                <span t-field="doc.note" />
             </p>
             </div>
             <!--table width="100%" >
@@ -190,11 +197,6 @@
                 </table-->
 
 	   
-            <div style="font:15px lucida-console,sans-serif !important;">
-            <p t-if="doc.payment_term_id ">
-               <strong> <span>Payment Term : </span></strong><span t-field="doc.payment_term_id"/>
-            </p>
-            </div>
 
         </div>
     </t>
