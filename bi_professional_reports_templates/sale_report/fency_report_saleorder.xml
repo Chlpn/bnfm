@@ -178,23 +178,23 @@
             <div style="font:15px lucida-console,sans-serif !important; ">
             <p t-if="doc.note">
             <strong><span>Terms and Conditions:</span> </strong><br/>
-                            <div style="font:15px lucida-console,sans-serif !important;">
+                            <!--div style="font:15px lucida-console,sans-serif !important;">
             <p t-if="doc.payment_term_id ">
                <strong> <span>Payment Term : </span></strong><span t-field="doc.payment_term_id"/>
             </p>
-            </div>
+            </div-->
 
                 <span t-field="doc.note" />
             </p>
             </div>
-            <!--table width="100%" >
+            <table width="100%" >
                 <tr>
                     <td width="35%" style="padding-top:10px" >Receivers Signature: </td>
                     <td width="30%" style="padding-top:10px" ><img src="/bi_professional_reports_templates/static/stamp.png"
                             style="max-height: 75px;"/></td>
                     <td width="35%" style="padding-top:10px" >Receiving Date: </td>
                 </tr>
-                </table-->
+                </table>
 
 	   
 
