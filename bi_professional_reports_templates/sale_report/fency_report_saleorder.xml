@@ -103,7 +103,7 @@
             <!-- Is there a discount on at least one line? -->
             <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
 
-            <table style="width:100%;" class="table table-condensed able table-striped; border:thin solid black">
+            <table style="width:100%; border:thin solid black" class="table table-condensed able table-striped">
                 <thead style=" background-color: #18B2E8; border:1px">
                     <tr style="height:10px; "></tr>
                     <tr>
