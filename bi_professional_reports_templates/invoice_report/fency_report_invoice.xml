@@ -256,10 +256,10 @@
                 <tr>
                     <td width="65%" style="padding-top:1px" ><!--img src="/bi_professional_reports_templates/static/sign.png"
                             style="max-height: 40px;"/-->
-			<p t-if="o.comment">
+			<!--p t-if="o.comment">
                 <strong>Terms And Conditions:</strong>
                 <span t-field="o.comment"/>
-            </p>
+            </p-->
                     </td>
                     <td width="35%" style="padding-top:1px" ><img src="/bi_professional_reports_templates/static/stamp.png"
                             style="max-height: 150px;"/></td>
