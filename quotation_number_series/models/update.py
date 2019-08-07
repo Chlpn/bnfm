@@ -9,5 +9,5 @@ class SaleOrder(models.Model):
         res = super(SaleOrder, self).create(vals)
         order_date = res.date_order
         sequence = res.name
-        res.name = 'QTNBN' + order_date[2:4] + '/' + order_date[5:7]  + sequence[2:]
+        res.name = 'QTNBN' + sequence[2:] + order_date[2:4] + '/' + order_date[5:7]
         return res
