@@ -84,8 +84,7 @@
                         <span>Customer: </span><span  style="color:red !important;" t-field="doc.partner_id" /><br/>
                         <span style="color:gray !important;" t-field="doc.partner_id.street" ></span><br/>
                         <span style="color:gray !important;" t-if="doc.partner_id.street2" t-field="doc.partner_id.street2" ></span><br/>
-                        <span style="color:gray !important;" t-if="doc.partner_id.city" t-field="doc.partner_id.city" ></span><br/>
-                        <span style="color:gray !important;" t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id"></span><br/>
+                        <span style="color:gray !important;" t-if="doc.partner_id.city" t-field="doc.partner_id.city" ></span>, <span style="color:gray !important;" t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id"></span><br/>
                         <span style="color:gray !important;">Phone: </span><span  style="color:gray !important;"  t-field="doc.partner_id.phone" /><br/>
                         
                         <span style="color:gray !important;">TRN: </span><span style="color:gray !important;" t-field="doc.partner_id.vat" /><br/>
