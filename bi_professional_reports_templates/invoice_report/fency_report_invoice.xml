@@ -79,11 +79,11 @@
 
 
                 <td>
-                <!--td class="text-center" style="width:16%" t-if="o.po_number">
+                <td class="text-center" style="width:16%" t-if="o.origin">
                 <font color="#000000">
-                    <strong> PO No:</strong></font>
-                    <font color="#FFFFFF"><p t-field="o.po_number"/></font>
-                </td-->
+                    <strong> Ref:</strong></font>
+                    <font color="#FFFFFF"><p t-field="o.origin"/></font>
+                </td>
 
                 <!--td class="text-center" style="width:16%" t-if="o.date_invoice">
                 <font color="#000000">
