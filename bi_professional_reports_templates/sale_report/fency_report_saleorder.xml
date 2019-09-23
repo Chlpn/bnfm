@@ -124,9 +124,9 @@
                             <td>
                                <span t-field="l.name"/>
                             </td>
-                            <td class="text-right" t-field="l.product_uom_qty">
+                            <td class="text-right">
+                                <span t-field="l.product_uom_qty , l.product_uom" groups="product.group_uom"/>
 
-                                <span groups="product.group_uom" t-field="l.product_uom"/>
                             </td>
                             <td class="text-right">
                                 <span t-field="l.price_unit"/>
