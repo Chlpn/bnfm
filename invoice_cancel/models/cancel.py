@@ -1,4 +1,6 @@
-from odoo import fields, models, api
+from odoo import fields, models, api, _
+from openerp.exceptions import UserError
+
 
 class AccountInvoice(models.Model):
    _inherit = "account.invoice"
