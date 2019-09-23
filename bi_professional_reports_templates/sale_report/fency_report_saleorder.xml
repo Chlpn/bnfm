@@ -111,7 +111,7 @@
                         <th class="text-right"><font color="#000000"><strong>Qty</strong></font></th>
                         <th class="text-right"><font color="#000000"><strong>Unit Price</strong></font></th>
                         <th t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line"><font color="#000000"><strong>Disc.(%)</strong></font></th>
-                        <th class="text-right"><font color="#000000"><strong>VAT 5%</strong></font></th>
+                        <!--th class="text-right"><font color="#000000"><strong>VAT 5%</strong></font></th-->
                         <th class="text-right"><font color="#000000"><strong>Price</strong></font></th>
                     </tr>
                </thead>
@@ -134,9 +134,9 @@
                             <td t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line">
                                 <span t-field="l.discount"/>
                             </td>
-                            <td class="text-right">
+                            <!--td class="text-right">
                                 <span t-esc="'%.2f'%(l.price_tax) "/>
-                            </td>
+                            </td-->
                             <td class="text-right">
                                 <span t-field="l.price_subtotal"
                                     t-field-options='{"widget": "monetary", "display_currency": "doc.pricelist_id.currency_id"}'/>
