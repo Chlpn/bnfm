@@ -98,8 +98,8 @@
                             <span t-field="order_line.date_planned" t-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}"/>
                         </td>
                         <td class="text-right">
-                            <span t-field="order_line.product_qty"/>
-                            <span t-field="order_line.product_uom" groups="product.group_uom"/>
+                            <span t-field="order_line.product_qty"/><span t-field="order_line.product_uom" groups="product.group_uom"/>
+
                         </td>
                     </tr>
                 </tbody>
