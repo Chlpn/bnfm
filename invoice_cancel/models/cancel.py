@@ -8,7 +8,7 @@ class AccountInvoice(models.Model):
    @api.model
    def action_cancel(self):
     if self.env['res.users'].has_group('account.group_account_manager'):
-      rec= super(AccountInvoice, self).unlink()
+      rec= super(AccountInvoice, self).action_cancel()
     else:
       raise UserError(_('You are not privilaged to cancel this invoice'))
       rec=0   
