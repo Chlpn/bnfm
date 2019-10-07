@@ -189,7 +189,7 @@
                 <tr>
                     <td width="35%" style="padding-top:10px" ><p t-field="doc.user_id.image" t-field-options='{"widget": "image"}'/><!--img src="/bi_professional_reports_templates/static/sign.png"
                             style="max-height: 50px;"/--><br></br><span t-field="doc.user_id"/>,<br></br><span t-field="doc.user_id.fax"/><br></br><span t-field="doc.user_id.mobile"/></td>
-                    <td width="30%" style="padding-top:10px" ><img src="/bi_professional_reports_templates/static/stamp.png"
+                    <td width="30%"><img src="/bi_professional_reports_templates/static/stamp.png"
                             style="max-height: 100px;"/></td>
                     <td width="35%" style="padding-top:10px" ></td>
                 </tr>
