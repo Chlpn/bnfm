@@ -190,7 +190,7 @@
                     <td width="35%" ><span t-field="doc.user_id.image" t-field-options='{"widget": "image"}'/>
                         <!--img src="/bi_professional_reports_templates/static/sign.png" style="max-height: 50px;"/-->
                         <span t-field="doc.user_id"/>,<br></br><span t-field="doc.user_id.fax"/><br></br><span t-field="doc.user_id.mobile"/></td>
-                    <td width="30%"><img src="/bi_professional_reports_templates/static/stamp.png" style="max-height: 100px; padding-top:0px"/><br></br><br></br></td>
+                    <td width="30%"><img src="/bi_professional_reports_templates/static/stamp.png" style="max-height: 100px; padding-top:1px; padding-bottom:10px"/></td>
                     <td width="35%"></td>
                 </tr>
                 </table>
