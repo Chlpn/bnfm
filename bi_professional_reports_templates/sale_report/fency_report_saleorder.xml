@@ -191,7 +191,7 @@
                         <!--img src="/bi_professional_reports_templates/static/sign.png" style="max-height: 50px;"/-->
                         <span t-field="doc.user_id"/>,<br></br><span t-field="doc.user_id.fax"/><br></br><span t-field="doc.user_id.mobile"/></td>
                     <td width="30%"><img src="/bi_professional_reports_templates/static/stamp.png"
-                            style="max-height: 80px;"/></td>
+                            style="max-height: 100px; padding-top:0px"/></td>
                     <td width="35%"></td>
                 </tr>
                 </table>
