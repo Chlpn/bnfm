@@ -150,7 +150,7 @@
                     <table>
                         <tr>
                             <td>
-                                Subject : <span t-field="doc.subject"/>
+                                <span t-if="doc.subject">Subject : <span t-field="doc.subject"/></span>
                             </td>
                         </tr>
                     </table>
