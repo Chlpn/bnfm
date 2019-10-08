@@ -7,7 +7,6 @@
             <field name="arch" type="xml">
                 <field name="pack_operation_product_ids">
                     <field name="desc"/>
-                    </field>
                 </field>
             </field>
         </record>
