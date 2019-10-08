@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id = "deliverynote_description_form_view">
+            <field name ="inherit_id" ref = "stock.view_picking_form"/>
+            <field name="model">stock.pack.operation</field>
+            <field name="arch" type="xml">
+                <field name="pack_operation_product_ids">
+                    <field name="desc"/>
+                    </field>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
