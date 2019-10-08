@@ -146,6 +146,15 @@
             </table>
 </div>
             <div class="row" name="total">
+                <div class="col-xs-4 pull-left">
+                    <table>
+                        <tr>
+                            <td>
+                                <span t-field="subject"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="col-xs-4 pull-right">
                     <table class="table table-condensed">
                         <tr class="border-black">
