@@ -86,8 +86,8 @@
                         <span style="color:gray !important;" t-if="doc.partner_id.street2" t-field="doc.partner_id.street2" ></span><br/>
                         <span style="color:gray !important;" t-if="doc.partner_id.city" t-field="doc.partner_id.city" ></span>, <span style="color:gray !important;" t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id"></span><br/>
                         <span style="color:gray !important;">Phone: </span><span  style="color:gray !important;"  t-field="doc.partner_id.phone" /><br/>
-                        
                         <span style="color:gray !important;">TRN: </span><span style="color:gray !important;" t-field="doc.partner_id.vat" /><br/>
+                        <span style="color:gray !important;" t-if="doc.subject">Subject : <span t-field="doc.subject"/></span>
                 </div>
                 <div class="col-xs-4 pull-right text-right" style="font:15px lucida-console,sans-serif !important;" >
                         <span>Address: </span><br/>
@@ -146,7 +146,7 @@
             </table>
 </div>
             <div class="row" name="total">
-                <div class="col-xs-4 pull-left">
+                <!--div class="col-xs-4 pull-left">
                     <table>
                         <tr>
                             <td>
@@ -154,7 +154,7 @@
                             </td>
                         </tr>
                     </table>
-                </div>
+                </div-->
                 <div class="col-xs-4 pull-right">
                     <table class="table table-condensed">
                         <tr class="border-black">
