@@ -72,6 +72,13 @@ class sale_order(models.Model):
     _inherit = 'sale.order'
 
     @api.multi
+    def amount_to_text(self, amount, currency='AED'):
+        convert_amount_in_words = amount_to_text_en.amount_to_text(amount, lang='en', currency='')
+        convert_amount_in_words = convert_amount_in_words.replace(' and Zero Cent', ' Only ')
+        convert_amount_in_words = convert_amount_in_words.replace('Cents', 'Fils')
+        return convert_amount_in_words
+
+    @api.multi
     def print_quotation(self):
         self.filtered(lambda s: s.state == 'draft').write({'state': 'sent'})
         if self.company_id.sale_template:
@@ -79,12 +86,7 @@ class sale_order(models.Model):
         else:
 		return self.env['report'].get_action(self, 'sale.report_saleorder')
 
-    @api.multi
-    def amount_to_text(self, amount, currency='AED'):
-        convert_amount_in_words = amount_to_text_en.amount_to_text(amount, lang='en', currency='')
-        convert_amount_in_words = convert_amount_in_words.replace(' and Zero Cent', ' Only ')
-        convert_amount_in_words = convert_amount_in_words.replace('Cents', 'Fils')
-        return convert_amount_in_words
+
 
 class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
