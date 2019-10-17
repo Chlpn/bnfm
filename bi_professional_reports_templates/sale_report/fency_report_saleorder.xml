@@ -146,15 +146,15 @@
             </table>
 </div>
             <div class="row" name="total">
-                <!--div class="col-xs-4 pull-left">
+                <div class="col-xs-4 pull-left">
                     <table>
                         <tr>
                             <td>
-                                <span t-if="doc.subject">Subject : <span t-field="doc.subject"/></span>
+                                <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_total)"/>
                             </td>
                         </tr>
                     </table>
-                </div-->
+                </div>
                 <div class="col-xs-4 pull-right">
                     <table class="table table-condensed">
                         <tr class="border-black">
