@@ -11,7 +11,7 @@
     """,
     'author': 'iSquare Informatics',
     'website': 'http://www.isi.ae',
-    'depends': ['base', 'account', 'sale', 'purchase', 'stock', 'sale_stock'],
+    'depends': ['base', 'account', 'sale', 'purchase', 'stock', 'sale_stock', 'report'],
     'data': [
 		"res_company.xml",
 		"invoice_report/fency_report_account.xml",
