@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openerp import models, fields, api, _
-from openerp.tools import amount_to_text
+from openerp.tools import amount_to_text_en
 
 class res_company(models.Model):
     _inherit = "res.company"
