@@ -180,6 +180,17 @@
         </div>
 
             <div class="row">
+
+                <div class="col-xs-4 pull-left">
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>THE SUM OF :</strong><span t-esc="o.amount_to_text(o.amount_total)"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
                 <div class="col-xs-4 pull-right">
                     <table class="table table-condensed">
                         <tr class="border-black">
