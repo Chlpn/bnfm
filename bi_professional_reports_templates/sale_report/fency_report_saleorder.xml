@@ -146,7 +146,7 @@
             </table>
 </div>
             <div class="row" name="total">
-                <div class="col-xs-4 pull-left">
+                <div class="col-xs-8 pull-left">
                     <table>
                         <tr>
                             <td>
@@ -183,7 +183,6 @@
             </div>
             <!--div style="padding-top:50px;"></div-->
             <div style="font:15px lucida-console,sans-serif !important; ">
-                <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_total)"/>
             <p t-if="doc.note">
             <strong><span>Terms and Conditions:</span> </strong><br/>
                             <!--div style="font:15px lucida-console,sans-serif !important;">
