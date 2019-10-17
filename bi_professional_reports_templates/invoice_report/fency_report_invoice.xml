@@ -181,7 +181,7 @@
 
             <div class="row">
 
-                <div class="col-xs-4 pull-left">
+                <!--div class="col-xs-4 pull-left">
                     <table>
                         <tr>
                             <td>
@@ -189,7 +189,7 @@
                             </td>
                         </tr>
                     </table>
-                </div>
+                </div-->
 
                 <div class="col-xs-4 pull-right">
                     <table class="table table-condensed">
