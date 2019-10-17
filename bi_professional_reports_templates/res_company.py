@@ -46,12 +46,7 @@ class account_invoice(models.Model):
         self.sent = True
         return self.env['report'].get_action(self, 'bi_professional_reports_templates.report_invoice')
 
-    @api.multi
-    def amount_to_text(self, amount, currency='AED'):
-        convert_amount_in_words = amount_to_text_en.amount_to_text(amount, lang='en', currency='')
-        convert_amount_in_words = convert_amount_in_words.replace(' and Zero Cent', ' Only ')
-        convert_amount_in_words = convert_amount_in_words.replace('Cents', 'Fils')
-        return convert_amount_in_words
+
 
 
 class res_company(models.Model):
@@ -76,6 +71,12 @@ class res_partner_bank(models.Model):
 class sale_order(models.Model):
     _inherit = 'sale.order'
 
+    @api.multi
+    def amount_to_text(self, amount, currency='AED'):
+        convert_amount_in_words = amount_to_text_en.amount_to_text(amount, lang='en', currency='')
+        convert_amount_in_words = convert_amount_in_words.replace(' and Zero Cent', ' Only ')
+        convert_amount_in_words = convert_amount_in_words.replace('Cents', 'Fils')
+        return convert_amount_in_words
 
     @api.multi
     def print_quotation(self):

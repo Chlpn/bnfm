@@ -150,7 +150,7 @@
                     <table>
                         <tr>
                             <td>
-                                <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_untaxed)"/>
+                                <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_total)"/>
                             </td>
                         </tr>
                     </table>
