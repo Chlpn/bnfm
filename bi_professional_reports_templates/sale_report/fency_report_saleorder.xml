@@ -87,7 +87,7 @@
                         <span style="color:gray !important;" t-if="doc.partner_id.city" t-field="doc.partner_id.city" ></span>, <span style="color:gray !important;" t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id"></span><br/>
                         <span style="color:gray !important;">Phone: </span><span  style="color:gray !important;"  t-field="doc.partner_id.phone" /><br/>
                         <span style="color:gray !important;">TRN: </span><span style="color:gray !important;" t-field="doc.partner_id.vat" /><br/>
-                        <span style="color:gray !important;" t-if="doc.subject"><u><strong>Subject : <span t-field="doc.subject"/></strong></u></span>
+                        <span style="color:gray !important;" t-if="doc.subject"><u>Subject : <span t-field="doc.subject"/></u></span>
                 <div class="col-xs-4 pull-right text-right" style="font:15px lucida-console,sans-serif !important;" >
                         <span>Address: </span><br/>
                         <span style="color:gray !important;" t-field="company.partner_id.street" /><br/>
