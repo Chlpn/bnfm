@@ -6,7 +6,7 @@
             <field name="model">sale.order</field>
             <field name="arch" type="xml">
                     <field name="payment_term_id" position="after">
-                        <field name="subject"/>
+                        <field name="subject" widget="html"/>
                     </field>
             </field>
 
