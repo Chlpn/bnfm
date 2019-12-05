@@ -150,8 +150,8 @@
                     <table>
                         <tr style="height:32px"><td></td></tr>
                         <tr style="height:32px"><td></td></tr>
-                        <tr style=" padding-top:10px; background-color: #DEE5E5; height:30px;" class="border-black">
-                            <td>
+                        <tr style=" background-color: #DEE5E5; height:30px;" class="border-black">
+                            <td style=" padding-top:5px;" >
                                 <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_total)"/>
                             </td>
                         </tr>
