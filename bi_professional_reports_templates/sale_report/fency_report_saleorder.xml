@@ -148,6 +148,8 @@
             <div class="row" name="total">
                 <div class="col-xs-8 pull-left">
                     <table>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
                         <tr>
                             <td>
                                 <strong>THE SUM OF :</strong><span t-esc="doc.amount_to_text(doc.amount_total)"/>
