@@ -47,6 +47,7 @@ class ReceiptVoucher(models.Model):
     def amount_to_text(self, amount, currency='AED'):
         convert_amount_in_words = amount_to_text_en.amount_to_text(amount, lang='en', currency='')
         convert_amount_in_words = convert_amount_in_words.replace(' and Zero Cent', ' Only ')
+        convert_amount_in_words = convert_amount_in_words.replace('Cents', 'Fils')
         return convert_amount_in_words
 
     @api.onchange('partner_id')
