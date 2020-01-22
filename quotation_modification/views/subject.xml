@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--odoo>
+<odoo>
     <data>
                 <record model="ir.ui.view" id = "subject_sale_view_order_form">
             <field name ="inherit_id" ref = "sale.view_order_form"/>
             <field name="model">sale.order</field>
             <field name="arch" type="xml">
                     <field name="payment_term_id" position="after">
-                        <field name="subject" widget="html"/>
+                        <field name="subject"/>
                     </field>
             </field>
 
                 </record>
 
     </data>
-</odoo-->
+</odoo>
