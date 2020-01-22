@@ -183,8 +183,10 @@
 
                 <div class="col-xs-8 pull-left">
                     <table>
-                        <tr>
-                            <td>
+                        <tr style="height:32px"><td></td></tr>
+                        <tr style="height:32px"><td></td></tr>
+                        <tr class="border-black">
+                            <td style=" padding-top:5px;" >
                                 <strong>THE SUM OF :</strong><span t-esc="o.amount_to_text(o.amount_total)"/>
                             </td>
                         </tr>
